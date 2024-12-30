@@ -1,3 +1,5 @@
+import { DropdownMenuDemo } from "@/components/DropdownMenuDemo";
+import { ChevronDown } from "lucide-react";
 import React from "react";
 
 export default function Home() {
@@ -28,6 +30,7 @@ export default function Home() {
                 data-target="#collapseItem0"
               ></span>
               <a href="practice-areas.html">Practice Areas</a>
+
               <ul className="collapse" id="collapseItem0">
                 <li>
                   <a href="elements.html">Elements</a>
@@ -73,9 +76,9 @@ export default function Home() {
       </div>
 
       {/* Section:nav-bar */}
-      <nav className="site-nav dark mb-5">
+      <nav className="site-nav dark mb-5 px-20">
         <div className="container">
-          <div className="site-navigation">
+          <div className="site-navigation flex justify-between">
             <a href="index.html" className="logo m-0">
               Justice<span className="text-primary">.</span>
             </a>
@@ -84,8 +87,16 @@ export default function Home() {
               <li className="active">
                 <a href="index.html">Home</a>
               </li>
+
+              {/* <li>
+                <DropdownMenuDemo />
+              </li> */}
               <li className="has-children">
-                <a href="practice-areas.html">Practice Areas</a>
+                <a href="#">
+                  Practice Areas
+                  <ChevronDown size={16} />
+                </a>
+
                 <ul className="dropdown">
                   <li>
                     <a href="elements.html">Elements</a>
@@ -125,7 +136,7 @@ export default function Home() {
 
             <a
               href="#"
-              className="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+              className="burger ml-auto sm:hidden"
               data-toggle="collapse"
               data-target="#main-navbar"
             >
@@ -140,23 +151,17 @@ export default function Home() {
         className="untree_co--hero overlay"
         style={{ backgroundImage: `url('/images/hero_bg.jpg')` }}
       >
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-5 ml-auto">
+        <div className="h-full w-full">
+          <div className="flex justify-center items-center h-full">
+            <div className="w-5/12 ml-auto">
               <div className="intro">
-                <h1
-                  className="mb-4 aos-init aos-animate"
-                  data-aos="fade-left"
-                  data-aos-delay="100"
-                >
-                  <strong className="text-primary">We Fight</strong> For Your
-                  Right
+                <h1 className="mb-4 aos-init aos-animate flex flex-col leading-tight">
+                  <span>
+                    <strong className="text-primary">We Fight</strong> For
+                  </span>
+                  <span>Your Right</span>
                 </h1>
-                <div
-                  className="intro-desc aos-init aos-animate"
-                  data-aos="fade-left"
-                  data-aos-delay="200"
-                >
+                <div className="intro-desc aos-init aos-animate line">
                   <p className="mb-4">
                     Another cool free template by the fine folks at{" "}
                     <a href="https://Colorlib/" target="_blank">
@@ -428,9 +433,9 @@ export default function Home() {
                           <g
                             id="Page-1"
                             stroke="none"
-                            stroke-width="1"
+                            strokeWidth="1"
                             fill="none"
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                           >
                             <polygon
                               id="Path"
@@ -480,9 +485,9 @@ export default function Home() {
                           <g
                             id="Page-1"
                             stroke="none"
-                            stroke-width="1"
+                            strokeWidth="1"
                             fill="none"
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                           >
                             <polygon
                               id="Path"
@@ -511,7 +516,7 @@ export default function Home() {
                 </div>
                 <div
                   className="owl-item cloned"
-                  style={{ width: "283.333px", marginRight: "40px;" }}
+                  style={{ width: "283.333px", marginRight: "40px" }}
                 >
                   <div className="untree_co-testimonial">
                     <blockquote>
@@ -532,9 +537,9 @@ export default function Home() {
                           <g
                             id="Page-1"
                             stroke="none"
-                            stroke-width="1"
+                            strokeWidth="1"
                             fill="none"
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                           >
                             <polygon
                               id="Path"
@@ -584,9 +589,9 @@ export default function Home() {
                           <g
                             id="Page-1"
                             stroke="none"
-                            stroke-width="1"
+                            strokeWidth="1"
                             fill="none"
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                           >
                             <polygon
                               id="Path"
@@ -636,9 +641,9 @@ export default function Home() {
                           <g
                             id="Page-1"
                             stroke="none"
-                            stroke-width="1"
+                            strokeWidth="1"
                             fill="none"
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                           >
                             <polygon
                               id="Path"
@@ -688,9 +693,9 @@ export default function Home() {
                           <g
                             id="Page-1"
                             stroke="none"
-                            stroke-width="1"
+                            strokeWidth="1"
                             fill="none"
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                           >
                             <polygon
                               id="Path"
@@ -740,9 +745,9 @@ export default function Home() {
                           <g
                             id="Page-1"
                             stroke="none"
-                            stroke-width="1"
+                            strokeWidth="1"
                             fill="none"
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                           >
                             <polygon
                               id="Path"
@@ -792,9 +797,9 @@ export default function Home() {
                           <g
                             id="Page-1"
                             stroke="none"
-                            stroke-width="1"
+                            strokeWidth="1"
                             fill="none"
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                           >
                             <polygon
                               id="Path"
@@ -844,9 +849,9 @@ export default function Home() {
                           <g
                             id="Page-1"
                             stroke="none"
-                            stroke-width="1"
+                            strokeWidth="1"
                             fill="none"
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                           >
                             <polygon
                               id="Path"
@@ -896,9 +901,9 @@ export default function Home() {
                           <g
                             id="Page-1"
                             stroke="none"
-                            stroke-width="1"
+                            strokeWidth="1"
                             fill="none"
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                           >
                             <polygon
                               id="Path"
@@ -948,9 +953,9 @@ export default function Home() {
                           <g
                             id="Page-1"
                             stroke="none"
-                            stroke-width="1"
+                            strokeWidth="1"
                             fill="none"
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                           >
                             <polygon
                               id="Path"
@@ -1000,9 +1005,9 @@ export default function Home() {
                           <g
                             id="Page-1"
                             stroke="none"
-                            stroke-width="1"
+                            strokeWidth="1"
                             fill="none"
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                           >
                             <polygon
                               id="Path"

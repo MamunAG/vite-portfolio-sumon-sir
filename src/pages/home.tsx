@@ -1,6 +1,7 @@
 import { DropdownMenuDemo } from "@/components/DropdownMenuDemo";
-import { ChevronDown } from "lucide-react";
+import { ArrowRight, CarFront, ChevronDown } from "lucide-react";
 import React from "react";
+import "./home.css";
 
 export default function Home() {
   return (
@@ -76,24 +77,21 @@ export default function Home() {
       </div>
 
       {/* Section:nav-bar */}
-      <nav className="site-nav dark mb-5 px-20">
+      <nav className="site-nav dark mb-5 px-5 sm:px-20 ">
         <div className="container">
           <div className="site-navigation flex justify-between">
-            <a href="index.html" className="logo m-0">
+            <a href="index.html" className="logo m-0 ">
               Justice<span className="text-primary">.</span>
             </a>
 
-            <ul className="js-clone-nav d-none d-lg-inline-block site-menu float-right">
-              <li className="active">
+            <ul className="site-menu float-right hidden sm:block">
+              <li className="active ">
                 <a href="index.html">Home</a>
               </li>
 
-              {/* <li>
-                <DropdownMenuDemo />
-              </li> */}
-              <li className="has-children">
-                <a href="#">
-                  Practice Areas
+              {/* <li className="has-children">
+                <a href="#" className="whitespace-nowrap">
+                  Practice Areas3
                   <ChevronDown size={16} />
                 </a>
 
@@ -119,7 +117,7 @@ export default function Home() {
                     <a href="#">Menu Three</a>
                   </li>
                 </ul>
-              </li>
+              </li> */}
               <li>
                 <a href="services.html">Services</a>
               </li>
@@ -153,15 +151,23 @@ export default function Home() {
       >
         <div className="h-full w-full">
           <div className="flex justify-center items-center h-full">
-            <div className="w-5/12 ml-auto">
+            <div className="w-full sm:w-5/12 ml-auto">
               <div className="intro">
-                <h1 className="mb-4 aos-init aos-animate flex flex-col leading-tight">
-                  <span>
-                    <strong className="text-primary">We Fight</strong> For
-                  </span>
-                  <span>Your Right</span>
+                <h1
+                  className="mb-4 flex flex-col leading-tight"
+                  style={{ marginLeft: 30 }}
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                >
+                  <strong className="text-primary">We Fight</strong> For Your
+                  Right
                 </h1>
-                <div className="intro-desc aos-init aos-animate line">
+                <div
+                  className="intro-desc  line "
+                  style={{ marginLeft: 30 }}
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
                   <p className="mb-4">
                     Another cool free template by the fine folks at{" "}
                     <a href="https://Colorlib/" target="_blank">
@@ -169,13 +175,14 @@ export default function Home() {
                     </a>
                     .
                   </p>
-                  <p>
-                    <a href="#" className="btn btn-primary">
+                  <p className="mt-8">
+                    <a
+                      href="#"
+                      className="btn btn-primary text-slate-50 hover:text-slate-50 p-5 min-w-40"
+                    >
                       Free Consultation
                     </a>
                   </p>
-
-                  {/* <!-- < --> */}
                 </div>
               </div>
             </div>
@@ -185,135 +192,154 @@ export default function Home() {
 
       {/* end-section:hero */}
 
-      <div className="untree_co-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 mb-4 mb-lg-0">
-              <h2
-                className="heading mb-4 text-white aos-init aos-animate"
-                data-aos="fade-right"
-              >
-                Our <strong className="text-primary">Practice Areas</strong>
-              </h2>
-              <div
-                className="px-md-5 aos-init aos-animate"
-                data-aos="fade-right"
-                data-aos-delay="100"
-              >
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                  Separated they live in.
-                </p>
-                <p className="mb-4">
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics, a large language ocean.
-                </p>
-                <p>
-                  <a href="#" className="btn btn-primary">
-                    Learn More
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-5 ml-auto js-hover-focus-one">
-              <a
-                href="#"
-                className="d-flex service-sm align-items-center mb-3 aos-init aos-animate"
-                data-aos="fade-left"
-                data-aos-delay="0"
-              >
-                <span className="wrap-icon">
-                  <span className="flaticon-suitcase"></span>
-                </span>
-                <div className="text">
-                  Banking and Finance Law
-                  <span className="d-block">
-                    Far far away, behind the word mountains, far from the
-                    countries
-                  </span>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="d-flex service-sm align-items-center mb-3 aos-init aos-animate"
-                data-aos="fade-left"
-                data-aos-delay="100"
-              >
-                <span className="wrap-icon">
-                  <span className="flaticon-group"></span>
-                </span>
-                <div className="text">
-                  Commercial Law
-                  <span className="d-block">
-                    Far far away, behind the word mountains, far from the
-                    countries
-                  </span>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="d-flex service-sm align-items-center mb-3 aos-init aos-animate"
-                data-aos="fade-left"
-                data-aos-delay="200"
-              >
-                <span className="wrap-icon">
-                  <span className="flaticon-discussion"></span>
-                </span>
-                <div className="text">
-                  Corporate Law
-                  <span className="d-block">
-                    Far far away, behind the word mountains, far from the
-                    countries
-                  </span>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="d-flex service-sm align-items-center mb-3 aos-init aos-animate"
-                data-aos="fade-left"
-                data-aos-delay="100"
-              >
-                <span className="wrap-icon">
-                  <span className="flaticon-target"></span>
-                </span>
-                <div className="text">
-                  Criminal Law
-                  <span className="d-block">
-                    Far far away, behind the word mountains, far from the
-                    countries
-                  </span>
-                </div>
-              </a>
-
-              <p
-                className="pl-3 mt-5 aos-init aos-animate"
-                data-aos="fade-left"
-                data-aos-delay="200"
-              >
-                <a href="practice-areas.html" className="more">
-                  More Practice Areas{" "}
-                  <span className="icon-arrow_forward"></span>
+      {/* section:Practice Areas */}
+      <div className="untree_co-section" style={{ backgroundColor: "#37373F" }}>
+        <div className="p-10 flex flex-wrap gap-12">
+          <div className="w-full sm:w-5/12">
+            <h2 className="heading mb-4 text-white ">
+              Our <strong className="text-primary">Practice Areas</strong>
+            </h2>
+            <div
+              className="md:px-10 "
+              style={{ color: "#b2b2b8" }}
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts. Separated
+                they live in.
+              </p>
+              <p className="mb-4">
+                Separated they live in Bookmarksgrove right at the coast of the
+                Semantics, a large language ocean.
+              </p>
+              <p className="mt-10">
+                <a
+                  href="#"
+                  className="btn btn-primary p-5 px-8 text-white hover:text-white"
+                  data-aos="fade-right"
+                  data-aos-delay="0"
+                >
+                  Learn More
                 </a>
               </p>
             </div>
           </div>
+
+          <div className="w-full sm:w-5/12">
+            <a
+              href="#"
+              className="flex items-center mb-3"
+              data-aos="fade-left"
+              data-aos-delay="0"
+            >
+              <span className="wrap-icon text-gray-300">
+                <CarFront size={30} />
+              </span>
+
+              <div className="text-primary">
+                Banking and Finance Law
+                <span className="block" style={{ color: "#b2b2b8" }}>
+                  Far far away, behind the word mountains, far from the
+                  countries
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              className="flex items-center mb-3"
+              data-aos="fade-left"
+              data-aos-delay="0"
+            >
+              <span className="wrap-icon text-gray-300">
+                <CarFront size={30} />
+              </span>
+
+              <div className="text-primary">
+                Commercial Law
+                <span className="block" style={{ color: "#b2b2b8" }}>
+                  Far far away, behind the word mountains, far from the
+                  countries
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              className="flex items-center mb-3"
+              data-aos="fade-left"
+              data-aos-delay="0"
+            >
+              <span className="wrap-icon text-gray-300">
+                <CarFront size={30} />
+              </span>
+
+              <div className="text-primary">
+                Corporate Law
+                <span className="block" style={{ color: "#b2b2b8" }}>
+                  Far far away, behind the word mountains, far from the
+                  countries
+                </span>
+              </div>
+            </a>
+            <a
+              href="#"
+              className="flex items-center mb-3"
+              data-aos="fade-left"
+              data-aos-delay="0"
+            >
+              <span className="wrap-icon text-gray-300">
+                <CarFront size={30} />
+              </span>
+
+              <div className="text-primary">
+                Criminal Law
+                <span className="block" style={{ color: "#b2b2b8" }}>
+                  Far far away, behind the word mountains, far from the
+                  countries
+                </span>
+              </div>
+            </a>
+            <p
+              className="pl-3 mt-5 text-primary"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <a
+                href="practice-areas.html"
+                className="more whitespace-nowrap"
+                style={{
+                  display: "flex",
+                  justifyContent: "start",
+                  alignItems: "center",
+                }}
+              >
+                <p className="mr-2">More Practice Areas</p> <ArrowRight />
+              </a>
+            </p>
+          </div>
         </div>
       </div>
+      {/* end-section:Practice Areas */}
 
       {/* section: */}
 
-      <div className="untree_co-section pt-0 count-numbers">
+      <div
+        className="untree_co-section pt-0 count-numbers"
+        style={{ backgroundColor: "#37373F" }}
+      >
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-4 aos-init aos-animate" data-aos="fade-up">
+            <div className="col-lg-4 " data-aos="fade-up">
               <h2 className="heading text-white">
                 <strong className="text-primary">50 Years</strong> of Experience
                 in Various Cases
               </h2>
             </div>
             <div
-              className="col-md-6 col-lg-3 ml-auto aos-init aos-animate"
+              className="col-md-6 col-lg-3 ml-auto "
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -330,7 +356,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              className="col-md-6 col-lg-3 ml-auto aos-init aos-animate"
+              className="col-md-6 col-lg-3 ml-auto "
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -351,7 +377,7 @@ export default function Home() {
           <div className="row">
             <div className="col-lg-4"></div>
             <div
-              className="col-md-6 col-lg-3 ml-auto aos-init aos-animate"
+              className="col-md-6 col-lg-3 ml-auto "
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -368,7 +394,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              className="col-md-6 col-lg-3 ml-auto aos-init aos-animate"
+              className="col-md-6 col-lg-3 ml-auto "
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -390,7 +416,7 @@ export default function Home() {
 
       {/* section: Happy-client*/}
       <div
-        className="untree_co-section slider-wrap bg-primary-dark aos-init aos-animate"
+        className="untree_co-section slider-wrap bg-primary-dark "
         data-aos="fade"
       >
         <div className="container">
@@ -1066,17 +1092,14 @@ export default function Home() {
       </div>
 
       {/* section: More Expertise*/}
-      <div className="untree_co-section">
+      <div className="untree_co-section" style={{ backgroundColor: "#37373F" }}>
         <div className="container">
-          <h2
-            className="heading text-white mb-5 aos-init aos-animate"
-            data-aos="fade-right"
-          >
+          <h2 className="heading text-white mb-5 " data-aos="fade-right">
             More <strong className="text-primary">Expertise</strong>
           </h2>
           <div className="row">
             <div
-              className="col-md-6 mb-4 mb-lg-0 col-lg-3 aos-init aos-animate"
+              className="col-md-6 mb-4 mb-lg-0 col-lg-3 "
               data-aos="fade-right"
               data-aos-delay="0"
             >
@@ -1101,7 +1124,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="col-md-6 mb-4 mb-lg-0 col-lg-3 aos-init aos-animate"
+              className="col-md-6 mb-4 mb-lg-0 col-lg-3 "
               data-aos="fade-right"
               data-aos-delay="100"
             >
@@ -1127,7 +1150,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="col-md-6 mb-4 mb-lg-0 col-lg-3 aos-init aos-animate"
+              className="col-md-6 mb-4 mb-lg-0 col-lg-3 "
               data-aos="fade-right"
               data-aos-delay="200"
             >
@@ -1152,7 +1175,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="col-md-6 mb-4 mb-lg-0 col-lg-3 aos-init aos-animate"
+              className="col-md-6 mb-4 mb-lg-0 col-lg-3 "
               data-aos="fade-right"
               data-aos-delay="300"
             >
@@ -1182,9 +1205,9 @@ export default function Home() {
       </div>
 
       {/* section: Call us now*/}
-      <div className="container">
+      <div className="container" style={{ backgroundColor: "#37373F" }}>
         <div
-          className="untree_co-cta overlay aos-init aos-animate"
+          className="untree_co-cta overlay "
           style={{ backgroundImage: `url('images/hero_bg.jpg')` }}
           data-aos="fade"
         >
@@ -1204,7 +1227,7 @@ export default function Home() {
       </div>
 
       {/* section: Footer*/}
-      <div className="site-footer">
+      <div className="site-footer" style={{ backgroundColor: "#37373F" }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-3">

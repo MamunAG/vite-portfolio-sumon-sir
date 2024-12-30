@@ -1,6 +1,4 @@
-import { DropdownMenuDemo } from "@/components/DropdownMenuDemo";
-import { ArrowRight, CarFront, ChevronDown } from "lucide-react";
-import React from "react";
+import { ArrowRight, CarFront} from "lucide-react";
 import "./home.css";
 
 export default function Home() {

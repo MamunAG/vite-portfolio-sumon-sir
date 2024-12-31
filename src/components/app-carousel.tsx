@@ -6,6 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import HappyClientCard from "@/pages/happy-client-card";
 import Autoplay from "embla-carousel-autoplay";
 
 export function AppCarousel() {
@@ -17,28 +18,29 @@ export function AppCarousel() {
       }}
       plugins={[
         Autoplay({
-          delay: 2000,
+          delay: 3000,
         }),
       ]}
-      className="w-full max-w-lg"
+      className="w-full max-w-5xl"
     >
-      <CarouselContent>
+      <CarouselContent className="-ml-1">
         {Array.from({ length: 10 }).map((_, index) => (
-          <CarouselItem key={index} className="basis-full md:basis-1/2">
+          <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
             <div className="p-1">
               <Card>
                 <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-3xl font-semibold">{index + 1}</span>
+                  {/* <span className="text-2xl font-semibold">{index + 1}</span> */}
+                  <HappyClientCard />
                 </CardContent>
               </Card>
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className="flex justify-center items-center">
-        <div className="w-[70px] h-[40px] relative">
-          <CarouselPrevious className="absolute left-0 rounded-md text-primary" />
-          <CarouselNext className="absolute right-0 rounded-md text-primary" />
+      <div className="flex justify-center items-center mt-10">
+        <div className="w-[82px] h-[40px] relative">
+          <CarouselPrevious className="absolute left-0 rounded-md bg-text-primary border-none p-5 text-white" />
+          <CarouselNext className="absolute right-0 rounded-md bg-text-primary border-none p-5  text-white" />
         </div>
       </div>
     </Carousel>

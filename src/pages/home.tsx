@@ -1,5 +1,7 @@
-import { ArrowRight, CarFront} from "lucide-react";
+import { ArrowRight, CarFront, ChartArea } from "lucide-react";
 import "./home.css";
+import HappyClientCard from "./happy-client-card";
+import { AppCarousel } from "@/components/app-carousel";
 
 export default function Home() {
   return (
@@ -325,85 +327,145 @@ export default function Home() {
       {/* section: */}
 
       <div
-        className="untree_co-section pt-0 count-numbers"
+        className="untree_co-section pt-0 count-numbers flex justify-center p-7"
         style={{ backgroundColor: "#37373F" }}
       >
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-4 " data-aos="fade-up">
-              <h2 className="heading text-white">
+          <div className="flex items-center flex-wrap ">
+            <div className="lg:w-4/12 " data-aos="fade-up">
+              <h2 className="heading text-white text-left md:pl-10">
                 <strong className="text-primary">50 Years</strong> of Experience
                 in Various Cases
               </h2>
             </div>
             <div
-              className="col-md-6 col-lg-3 ml-auto "
+              className="md:w-6/12 lg:w-3/12 ml-auto "
               data-aos="fade-up"
               data-aos-delay="100"
             >
               <span className="display-2">
                 <span className="text-primary counter">
-                  <span data-number="90">90</span>
+                  <span
+                    data-number="90"
+                    style={{ fontSize: "5rem" }}
+                    className="font-light"
+                  >
+                    90
+                  </span>
                 </span>
-                <span className="text-white">+</span>
+                <span
+                  className="text-white font-light"
+                  style={{ fontSize: "5rem" }}
+                >
+                  +
+                </span>
               </span>
-              <strong className="d-block text-white">Awards</strong>
               <p>
+                <strong className="d-block text-white">Awards</strong>
+              </p>
+              <p style={{ color: "#b2b2b8" }}>
                 Separated they live in Bookmarksgrove right at the coast of the
                 Semantics.
               </p>
             </div>
             <div
-              className="col-md-6 col-lg-3 ml-auto "
+              className="md:w-6/12 lg:w-3/12 ml-auto "
               data-aos="fade-up"
               data-aos-delay="200"
             >
               <span className="display-2">
-                <span className="text-primary counter">
-                  <span data-number="3">3</span>K
+                <span
+                  className="text-primary counter font-light"
+                  style={{ fontSize: "5rem" }}
+                >
+                  <span
+                    data-number="3"
+                    style={{ fontSize: "5rem" }}
+                    className="font-light"
+                  >
+                    3
+                  </span>
+                  K
                 </span>
-                <span className="text-white">+</span>
+                <span
+                  className="text-white font-light"
+                  style={{ fontSize: "5rem" }}
+                >
+                  +
+                </span>
               </span>
-              <strong className="d-block text-white">Cases Wins</strong>
               <p>
+                <strong className="d-block text-white">Cases Wins</strong>
+              </p>
+              <p style={{ color: "#b2b2b8" }}>
                 Separated they live in Bookmarksgrove right at the coast of the
                 Semantics.
               </p>
             </div>
           </div>
 
-          <div className="row">
-            <div className="col-lg-4"></div>
+          <div className="flex flex-wrap">
+            <div className="lg:w-4/12"></div>
             <div
-              className="col-md-6 col-lg-3 ml-auto "
+              className="md:w-6/12 lg:w-3/12 ml-auto "
               data-aos="fade-up"
               data-aos-delay="100"
             >
               <span className="display-2">
-                <span className="text-primary counter">
-                  <span data-number="2">2</span>K
+                <span
+                  className="text-primary counter font-light"
+                  style={{ fontSize: "5rem" }}
+                >
+                  <span
+                    data-number="2"
+                    style={{ fontSize: "5rem" }}
+                    className="font-light"
+                  >
+                    2
+                  </span>
+                  K
                 </span>
-                <span className="text-white">+</span>
+                <span
+                  className="text-white font-light"
+                  style={{ fontSize: "5rem" }}
+                >
+                  +
+                </span>
               </span>
-              <strong className="d-block text-white">Clients</strong>
               <p>
+                <strong className="d-block text-white">Clients</strong>
+              </p>
+              <p style={{ color: "#b2b2b8" }}>
                 Separated they live in Bookmarksgrove right at the coast of the
                 Semantics.
               </p>
             </div>
             <div
-              className="col-md-6 col-lg-3 ml-auto "
+              className="md:w-6/12 lg:w-3/12 ml-auto "
               data-aos="fade-up"
               data-aos-delay="200"
             >
               <span className="display-2">
                 <span className="text-primary counter">
-                  <span data-number="200">200</span>
+                  <span
+                    data-number="200"
+                    style={{ fontSize: "5rem" }}
+                    className="font-light"
+                  >
+                    200
+                  </span>
                 </span>
-                <span className="text-white">+</span>
+                <span
+                  className="text-white font-light"
+                  style={{ fontSize: "5rem" }}
+                >
+                  +
+                </span>
               </span>
-              <strong className="d-block text-white">Attorneys</strong>
               <p>
+                <strong className="d-block text-white">Attorneys</strong>
+              </p>
+              <p style={{ color: "#b2b2b8" }}>
                 Separated they live in Bookmarksgrove right at the coast of the
                 Semantics.
               </p>
@@ -414,696 +476,46 @@ export default function Home() {
 
       {/* section: Happy-client*/}
       <div
-        className="untree_co-section slider-wrap bg-primary-dark "
+        className="untree_co-section slider-wrap bg-primary-dark p-10"
         data-aos="fade"
       >
-        <div className="container">
+        <div className="container min-w-full md:px-32">
           <h2 className="heading text-white mb-5">
             <strong className="text-primary">Happy</strong> Clients
           </h2>
-          <div className="slider owl-carousel owl-3-slider owl-loaded owl-drag">
-            <div
-              className="owl-stage-outer owl-height"
-              style={{ height: "386.344px" }}
-            >
-              <div
-                className="owl-stage"
-                style={{
-                  transform: "translate3d(-2263px, 0px, 0px)",
-                  transition: "0.7s",
-                  width: " 3880px",
-                }}
-              >
-                <div
-                  className="owl-item cloned"
-                  style={{ width: "283.333px", marginRight: "40px" }}
-                >
-                  <div className="untree_co-testimonial">
-                    <blockquote>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in. Separated they live in
-                      Bookmarksgrove right at the coast of the Semantics, a
-                      large language ocean.
-                      <div className="bubble">
-                        <svg
-                          width="49px"
-                          height="36px"
-                          viewBox="0 0 49 36"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            id="Page-1"
-                            stroke="none"
-                            strokeWidth="1"
-                            fill="none"
-                            fillRule="evenodd"
-                          >
-                            <polygon
-                              id="Path"
-                              fill="#FFFFFF"
-                              points="0.05859375 0.72265625 0.05859375 35.230429 48.65625 0.72265625"
-                            ></polygon>
-                          </g>
-                        </svg>
-                      </div>
-                    </blockquote>
-
-                    <div className="author d-flex align-items-center">
-                      <div className="pic">
-                        <img
-                          src="images/person_1.jpg"
-                          alt="Image"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="text">
-                        <strong className="d-block">Carl Anderson</strong>
-                        <span className="position">CEO, Co-Founder</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="owl-item cloned"
-                  style={{ width: "283.333px", marginRight: "40px" }}
-                >
-                  <div className="untree_co-testimonial">
-                    <blockquote>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in. Separated they live in
-                      Bookmarksgrove right at the coast of the Semantics, a
-                      large language ocean.
-                      <div className="bubble">
-                        <svg
-                          width="49px"
-                          height="36px"
-                          viewBox="0 0 49 36"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            id="Page-1"
-                            stroke="none"
-                            strokeWidth="1"
-                            fill="none"
-                            fillRule="evenodd"
-                          >
-                            <polygon
-                              id="Path"
-                              fill="#FFFFFF"
-                              points="0.05859375 0.72265625 0.05859375 35.230429 48.65625 0.72265625"
-                            ></polygon>
-                          </g>
-                        </svg>
-                      </div>
-                    </blockquote>
-
-                    <div className="author d-flex align-items-center">
-                      <div className="pic">
-                        <img
-                          src="images/person_2.jpg"
-                          alt="Image"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="text">
-                        <strong className="d-block">Carl Anderson</strong>
-                        <span className="position">CEO, Co-Founder</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="owl-item cloned"
-                  style={{ width: "283.333px", marginRight: "40px" }}
-                >
-                  <div className="untree_co-testimonial">
-                    <blockquote>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in. Separated they live in
-                      Bookmarksgrove right at the coast of the Semantics, a
-                      large language ocean.
-                      <div className="bubble">
-                        <svg
-                          width="49px"
-                          height="36px"
-                          viewBox="0 0 49 36"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            id="Page-1"
-                            stroke="none"
-                            strokeWidth="1"
-                            fill="none"
-                            fillRule="evenodd"
-                          >
-                            <polygon
-                              id="Path"
-                              fill="#FFFFFF"
-                              points="0.05859375 0.72265625 0.05859375 35.230429 48.65625 0.72265625"
-                            ></polygon>
-                          </g>
-                        </svg>
-                      </div>
-                    </blockquote>
-
-                    <div className="author d-flex align-items-center">
-                      <div className="pic">
-                        <img
-                          src="images/person_3.jpg"
-                          alt="Image"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="text">
-                        <strong className="d-block">Carl Anderson</strong>
-                        <span className="position">CEO, Co-Founder</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="owl-item"
-                  style={{ width: "283.333px", marginRight: "40px" }}
-                >
-                  <div className="untree_co-testimonial">
-                    <blockquote>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in. Separated they live in
-                      Bookmarksgrove right at the coast of the Semantics, a
-                      large language ocean.
-                      <div className="bubble">
-                        <svg
-                          width="49px"
-                          height="36px"
-                          viewBox="0 0 49 36"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            id="Page-1"
-                            stroke="none"
-                            strokeWidth="1"
-                            fill="none"
-                            fillRule="evenodd"
-                          >
-                            <polygon
-                              id="Path"
-                              fill="#FFFFFF"
-                              points="0.05859375 0.72265625 0.05859375 35.230429 48.65625 0.72265625"
-                            ></polygon>
-                          </g>
-                        </svg>
-                      </div>
-                    </blockquote>
-
-                    <div className="author d-flex align-items-center">
-                      <div className="pic">
-                        <img
-                          src="images/person_1.jpg"
-                          alt="Image"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="text">
-                        <strong className="d-block">Carl Anderson</strong>
-                        <span className="position">CEO, Co-Founder</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="owl-item"
-                  style={{ width: "283.333px", marginRight: "40px" }}
-                >
-                  <div className="untree_co-testimonial">
-                    <blockquote>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in. Separated they live in
-                      Bookmarksgrove right at the coast of the Semantics, a
-                      large language ocean.
-                      <div className="bubble">
-                        <svg
-                          width="49px"
-                          height="36px"
-                          viewBox="0 0 49 36"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            id="Page-1"
-                            stroke="none"
-                            strokeWidth="1"
-                            fill="none"
-                            fillRule="evenodd"
-                          >
-                            <polygon
-                              id="Path"
-                              fill="#FFFFFF"
-                              points="0.05859375 0.72265625 0.05859375 35.230429 48.65625 0.72265625"
-                            ></polygon>
-                          </g>
-                        </svg>
-                      </div>
-                    </blockquote>
-
-                    <div className="author d-flex align-items-center">
-                      <div className="pic">
-                        <img
-                          src="images/person_2.jpg"
-                          alt="Image"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="text">
-                        <strong className="d-block">Carl Anderson</strong>
-                        <span className="position">CEO, Co-Founder</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="owl-item"
-                  style={{ width: " 283.333px", marginRight: "40px" }}
-                >
-                  <div className="untree_co-testimonial">
-                    <blockquote>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in. Separated they live in
-                      Bookmarksgrove right at the coast of the Semantics, a
-                      large language ocean.
-                      <div className="bubble">
-                        <svg
-                          width="49px"
-                          height="36px"
-                          viewBox="0 0 49 36"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            id="Page-1"
-                            stroke="none"
-                            strokeWidth="1"
-                            fill="none"
-                            fillRule="evenodd"
-                          >
-                            <polygon
-                              id="Path"
-                              fill="#FFFFFF"
-                              points="0.05859375 0.72265625 0.05859375 35.230429 48.65625 0.72265625"
-                            ></polygon>
-                          </g>
-                        </svg>
-                      </div>
-                    </blockquote>
-
-                    <div className="author d-flex align-items-center">
-                      <div className="pic">
-                        <img
-                          src="images/person_3.jpg"
-                          alt="Image"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="text">
-                        <strong className="d-block">Carl Anderson</strong>
-                        <span className="position">CEO, Co-Founder</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="owl-item"
-                  style={{ width: " 283.333px", marginRight: "40px" }}
-                >
-                  <div className="untree_co-testimonial">
-                    <blockquote>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in. Separated they live in
-                      Bookmarksgrove right at the coast of the Semantics, a
-                      large language ocean.
-                      <div className="bubble">
-                        <svg
-                          width="49px"
-                          height="36px"
-                          viewBox="0 0 49 36"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            id="Page-1"
-                            stroke="none"
-                            strokeWidth="1"
-                            fill="none"
-                            fillRule="evenodd"
-                          >
-                            <polygon
-                              id="Path"
-                              fill="#FFFFFF"
-                              points="0.05859375 0.72265625 0.05859375 35.230429 48.65625 0.72265625"
-                            ></polygon>
-                          </g>
-                        </svg>
-                      </div>
-                    </blockquote>
-
-                    <div className="author d-flex align-items-center">
-                      <div className="pic">
-                        <img
-                          src="images/person_1.jpg"
-                          alt="Image"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="text">
-                        <strong className="d-block">Carl Anderson</strong>
-                        <span className="position">CEO, Co-Founder</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="owl-item active"
-                  style={{ width: " 283.333px", marginRight: "40px" }}
-                >
-                  <div className="untree_co-testimonial">
-                    <blockquote>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in. Separated they live in
-                      Bookmarksgrove right at the coast of the Semantics, a
-                      large language ocean.
-                      <div className="bubble">
-                        <svg
-                          width="49px"
-                          height="36px"
-                          viewBox="0 0 49 36"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            id="Page-1"
-                            stroke="none"
-                            strokeWidth="1"
-                            fill="none"
-                            fillRule="evenodd"
-                          >
-                            <polygon
-                              id="Path"
-                              fill="#FFFFFF"
-                              points="0.05859375 0.72265625 0.05859375 35.230429 48.65625 0.72265625"
-                            ></polygon>
-                          </g>
-                        </svg>
-                      </div>
-                    </blockquote>
-
-                    <div className="author d-flex align-items-center">
-                      <div className="pic">
-                        <img
-                          src="images/person_2.jpg"
-                          alt="Image"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="text">
-                        <strong className="d-block">Carl Anderson</strong>
-                        <span className="position">CEO, Co-Founder</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="owl-item active"
-                  style={{ width: " 283.333px", marginRight: "40px" }}
-                >
-                  <div className="untree_co-testimonial">
-                    <blockquote>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in. Separated they live in
-                      Bookmarksgrove right at the coast of the Semantics, a
-                      large language ocean.
-                      <div className="bubble">
-                        <svg
-                          width="49px"
-                          height="36px"
-                          viewBox="0 0 49 36"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            id="Page-1"
-                            stroke="none"
-                            strokeWidth="1"
-                            fill="none"
-                            fillRule="evenodd"
-                          >
-                            <polygon
-                              id="Path"
-                              fill="#FFFFFF"
-                              points="0.05859375 0.72265625 0.05859375 35.230429 48.65625 0.72265625"
-                            ></polygon>
-                          </g>
-                        </svg>
-                      </div>
-                    </blockquote>
-
-                    <div className="author d-flex align-items-center">
-                      <div className="pic">
-                        <img
-                          src="images/person_3.jpg"
-                          alt="Image"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="text">
-                        <strong className="d-block">Carl Anderson</strong>
-                        <span className="position">CEO, Co-Founder</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="owl-item cloned active"
-                  style={{ width: " 283.333px", marginRight: "40px" }}
-                >
-                  <div className="untree_co-testimonial">
-                    <blockquote>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in. Separated they live in
-                      Bookmarksgrove right at the coast of the Semantics, a
-                      large language ocean.
-                      <div className="bubble">
-                        <svg
-                          width="49px"
-                          height="36px"
-                          viewBox="0 0 49 36"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            id="Page-1"
-                            stroke="none"
-                            strokeWidth="1"
-                            fill="none"
-                            fillRule="evenodd"
-                          >
-                            <polygon
-                              id="Path"
-                              fill="#FFFFFF"
-                              points="0.05859375 0.72265625 0.05859375 35.230429 48.65625 0.72265625"
-                            ></polygon>
-                          </g>
-                        </svg>
-                      </div>
-                    </blockquote>
-
-                    <div className="author d-flex align-items-center">
-                      <div className="pic">
-                        <img
-                          src="images/person_1.jpg"
-                          alt="Image"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="text">
-                        <strong className="d-block">Carl Anderson</strong>
-                        <span className="position">CEO, Co-Founder</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="owl-item cloned"
-                  style={{ width: " 283.333px", marginRight: "40px" }}
-                >
-                  <div className="untree_co-testimonial">
-                    <blockquote>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in. Separated they live in
-                      Bookmarksgrove right at the coast of the Semantics, a
-                      large language ocean.
-                      <div className="bubble">
-                        <svg
-                          width="49px"
-                          height="36px"
-                          viewBox="0 0 49 36"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            id="Page-1"
-                            stroke="none"
-                            strokeWidth="1"
-                            fill="none"
-                            fillRule="evenodd"
-                          >
-                            <polygon
-                              id="Path"
-                              fill="#FFFFFF"
-                              points="0.05859375 0.72265625 0.05859375 35.230429 48.65625 0.72265625"
-                            ></polygon>
-                          </g>
-                        </svg>
-                      </div>
-                    </blockquote>
-
-                    <div className="author d-flex align-items-center">
-                      <div className="pic">
-                        <img
-                          src="images/person_2.jpg"
-                          alt="Image"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="text">
-                        <strong className="d-block">Carl Anderson</strong>
-                        <span className="position">CEO, Co-Founder</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="owl-item cloned"
-                  style={{ width: " 283.333px", marginRight: "40px" }}
-                >
-                  <div className="untree_co-testimonial">
-                    <blockquote>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in. Separated they live in
-                      Bookmarksgrove right at the coast of the Semantics, a
-                      large language ocean.
-                      <div className="bubble">
-                        <svg
-                          width="49px"
-                          height="36px"
-                          viewBox="0 0 49 36"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            id="Page-1"
-                            stroke="none"
-                            strokeWidth="1"
-                            fill="none"
-                            fillRule="evenodd"
-                          >
-                            <polygon
-                              id="Path"
-                              fill="#FFFFFF"
-                              points="0.05859375 0.72265625 0.05859375 35.230429 48.65625 0.72265625"
-                            ></polygon>
-                          </g>
-                        </svg>
-                      </div>
-                    </blockquote>
-
-                    <div className="author d-flex align-items-center">
-                      <div className="pic">
-                        <img
-                          src="images/person_3.jpg"
-                          alt="Image"
-                          className="img-fluid"
-                        />
-                      </div>
-                      <div className="text">
-                        <strong className="d-block">Carl Anderson</strong>
-                        <span className="position">CEO, Co-Founder</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="owl-nav">
-              <div className="owl-prev">
-                <span className="icon-keyboard_backspace"></span>
-              </div>
-              <div className="owl-next">
-                <span className="icon-keyboard_backspace"></span>
-              </div>
-            </div>
-            <div className="owl-dots">
-              <div className="owl-dot">
-                <span></span>
-              </div>
-              <div className="owl-dot active">
-                <span></span>
-              </div>
-            </div>
+          <div className="w-full flex justify-center">
+            <AppCarousel />
           </div>
         </div>
 
-        <div className="slider-nav">
+        {/* <div className="slider-nav">
           <a href="#" className="js-prev js-custom-prev-v2">
             <span className="icon-arrow_back"></span>
           </a>
           <a href="#" className="js-next js-custom-next-v2">
             <span className="icon-arrow_forward"></span>
           </a>
-        </div>
+        </div> */}
       </div>
 
       {/* section: More Expertise*/}
-      <div className="untree_co-section" style={{ backgroundColor: "#37373F" }}>
-        <div className="container">
+      <div
+        className="untree_co-section p-5 md:p-32"
+        style={{ backgroundColor: "#37373F" }}
+      >
+        <div className="container min-w-full">
           <h2 className="heading text-white mb-5 " data-aos="fade-right">
             More <strong className="text-primary">Expertise</strong>
           </h2>
-          <div className="row">
+          <div className="flex flex-row flex-wrap m-0 p-0">
             <div
-              className="col-md-6 mb-4 mb-lg-0 col-lg-3 "
+              className="w-full md:w-6/12 mb-4 lg:mb-0 lg:w-3/12 p-2"
               data-aos="fade-right"
               data-aos-delay="0"
             >
               <div className="service">
-                <div className="wrap-icon">
-                  <span className="flaticon-suitcase"></span>
+                <div className="wrap-icon text-slate-100">
+                  <ChartArea />
                 </div>
                 <h3>
                   <a href="#">
@@ -1122,13 +534,13 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="col-md-6 mb-4 mb-lg-0 col-lg-3 "
+              className="w-full md:w-6/12 mb-4 lg:mb-0 lg:w-3/12  p-2"
               data-aos="fade-right"
               data-aos-delay="100"
             >
               <div className="service">
-                <div className="wrap-icon">
-                  <span className="flaticon-darts"></span>
+                <div className="wrap-icon text-slate-100">
+                  <ChartArea />
                 </div>
                 <h3>
                   <a href="#">
@@ -1148,13 +560,13 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="col-md-6 mb-4 mb-lg-0 col-lg-3 "
+              className="w-full md:w-6/12 mb-4 lg:mb-0 lg:w-3/12  p-2"
               data-aos="fade-right"
               data-aos-delay="200"
             >
               <div className="service">
-                <div className="wrap-icon">
-                  <span className="flaticon-crosshair"></span>
+                <div className="wrap-icon text-slate-100">
+                  <ChartArea />
                 </div>
                 <h3>
                   <a href="#">
@@ -1173,18 +585,17 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="col-md-6 mb-4 mb-lg-0 col-lg-3 "
+              className="w-full md:w-6/12 mb-4 lg:mb-0 lg:w-3/12  p-2"
               data-aos="fade-right"
-              data-aos-delay="300"
+              data-aos-delay="200"
             >
               <div className="service">
-                <div className="wrap-icon">
-                  <span className="flaticon-strategy"></span>
+                <div className="wrap-icon text-slate-100">
+                  <ChartArea />
                 </div>
                 <h3>
                   <a href="#">
-                    <span className="d-block">Criminal Prosecution</span> and
-                    Defense
+                    <span className="d-block">Intellectual</span> Proerty Law
                   </a>
                 </h3>
                 <p>

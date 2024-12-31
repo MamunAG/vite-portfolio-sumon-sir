@@ -6,7 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import HappyClientCard from "@/pages/happy-client-card";
+import HappyClientCard from "@/components/happy-client-card";
 import Autoplay from "embla-carousel-autoplay";
 
 export function AppCarousel() {

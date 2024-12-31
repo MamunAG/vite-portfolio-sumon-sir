@@ -3,11 +3,11 @@ import { Link } from "react-router";
 export default function CallUsNow() {
   return (
     <div
-      className="container px-5 md:px-52 relative flex justify-center items-center"
+      className="px-5 relative flex justify-center items-center"
       style={{ backgroundColor: "#37373F" }}
     >
       <div
-        className="rounded-md h-[24rem] opacity-65 w-full"
+        className="container rounded-md h-[24rem] opacity-65 w-full"
         style={{
           backgroundImage: `url('/images/hero_bg.jpg')`,
           backgroundSize: "cover",

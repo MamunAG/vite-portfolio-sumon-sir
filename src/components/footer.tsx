@@ -11,12 +11,12 @@ import "./footer.css";
 export default function Footer() {
   return (
     <div
-      className="site-footer md:px-52"
+      className="site-footer flex justify-center"
       style={{ backgroundColor: "#37373F" }}
     >
-      <div className="container">
-        <div className="flex">
-          <div className="lg:w-3/12">
+      <div className="container px-5">
+        <div className="flex flex-wrap">
+          <div className="w-6/12 md:w-3/12">
             <div className="widget">
               <h3>Home</h3>
               <ul className="list-unstyled float-left links">
@@ -42,7 +42,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="lg:w-3/12">
+          <div className="w-6/12 md:w-3/12">
             <div className="widget">
               <h3>Practice Area</h3>
               <ul className="list-unstyled float-left links">
@@ -65,7 +65,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="lg:w-3/12">
+          <div className="w-6/12 md:w-3/12">
             <div className="widget">
               <h3>Services</h3>
               <ul className="list-unstyled float-left links">
@@ -85,7 +85,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="lg:w-3/12">
+          <div className="w-6/12 md:w-3/12">
             <div className="widget">
               <h3>Contact</h3>
               <p style={{ color: "rgba(255, 255, 255, 0.5)" }} className="mb-4">
@@ -182,8 +182,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="row mt-5">
-          <div className="col-12 text-center">
+        <div className="flex mt-5">
+          <div className="w-full text-center">
             <p style={{ color: "rgba(255, 255, 255, 0.5)" }}>
               Copyright ©
               <script>document.write(new Date().getFullYear());</script>2024 All

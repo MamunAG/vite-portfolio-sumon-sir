@@ -2,6 +2,10 @@ import { ArrowRight, CarFront, ChartArea } from "lucide-react";
 import "./home.css";
 import HappyClientCard from "./happy-client-card";
 import { AppCarousel } from "@/components/app-carousel";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router";
+import CallUsNow from "@/components/call-us-now";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -614,168 +618,10 @@ export default function Home() {
       </div>
 
       {/* section: Call us now*/}
-      <div className="container" style={{ backgroundColor: "#37373F" }}>
-        <div
-          className="untree_co-cta overlay "
-          style={{ backgroundImage: `url('images/hero_bg.jpg')` }}
-          data-aos="fade"
-        >
-          <div className="row align-items-center justify-content-center text-center">
-            <div className="col-lg-7">
-              <h2 className="mb-4">
-                Let's get started. Call us Now for a Free Consultation
-              </h2>
-              <p className="mb-0">
-                <a href="#" className="btn btn-primary">
-                  Call Us Now
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <CallUsNow />
 
       {/* section: Footer*/}
-      <div className="site-footer" style={{ backgroundColor: "#37373F" }}>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3">
-              <div className="widget">
-                <h3>Home</h3>
-                <ul className="list-unstyled float-left links">
-                  <li>
-                    <a href="#">About us</a>
-                  </li>
-                  <li>
-                    <a href="#">Practice Area</a>
-                  </li>
-                  <li>
-                    <a href="#">Services</a>
-                  </li>
-                  <li>
-                    <a href="#">Attorneys</a>
-                  </li>
-                  <li>
-                    <a href="#">Terms</a>
-                  </li>
-                  <li>
-                    <a href="#">Privacy</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="col-lg-3">
-              <div className="widget">
-                <h3>Practice Area</h3>
-                <ul className="list-unstyled float-left links">
-                  <li>
-                    <a href="#">Banking Law</a>
-                  </li>
-                  <li>
-                    <a href="#">Commercial Law</a>
-                  </li>
-                  <li>
-                    <a href="#">Corporate Law</a>
-                  </li>
-                  <li>
-                    <a href="#">Family Law</a>
-                  </li>
-                  <li>
-                    <a href="#">Media Law</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="col-lg-3">
-              <div className="widget">
-                <h3>Services</h3>
-                <ul className="list-unstyled float-left links">
-                  <li>
-                    <a href="#">Labor Law</a>
-                  </li>
-                  <li>
-                    <a href="#">Employment</a>
-                  </li>
-                  <li>
-                    <a href="#">Property Law</a>
-                  </li>
-                  <li>
-                    <a href="#">Prosecution</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="col-lg-3">
-              <div className="widget">
-                <h3>Contact</h3>
-                <address>43 Raymouth Rd. Baltemoer, London 3910</address>
-                <ul className="list-unstyled links mb-4">
-                  <li>
-                    <a href="tel://11234567890">+1(123)-456-7890</a>
-                  </li>
-                  <li>
-                    <a href="tel://11234567890">+1(123)-456-7890</a>
-                  </li>
-                  <li>
-                    <a href="mailto:info@mydomain.com">info@mydomain.com</a>
-                  </li>
-                </ul>
-
-                <h3>Connect</h3>
-                <ul className="list-unstyled social">
-                  <li>
-                    <a href="#">
-                      <span className="icon-instagram"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span className="icon-twitter"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span className="icon-facebook"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span className="icon-linkedin"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span className="icon-pinterest"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span className="icon-dribbble"></span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="row mt-5">
-            <div className="col-12 text-center">
-              <p>
-                Copyright ©
-                <script>document.write(new Date().getFullYear());</script>2024
-                All rights reserved | This template is made with{" "}
-                <i className="icon-heart text-danger" aria-hidden="true"></i> by{" "}
-                {/* <a href="https://colorlib.com" target="_blank"> */}
-                Colorlib
-                {/* </a> */}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Footer />
 
       {/* section: overlayer*/}
       <div id="overlayer" style={{ display: "none" }}></div>

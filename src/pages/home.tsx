@@ -1,9 +1,6 @@
 import { ArrowRight, CarFront, ChartArea } from "lucide-react";
 import "./home.css";
-import HappyClientCard from "./happy-client-card";
 import { AppCarousel } from "@/components/app-carousel";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router";
 import CallUsNow from "@/components/call-us-now";
 import Footer from "@/components/footer";
 

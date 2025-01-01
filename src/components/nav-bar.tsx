@@ -1,7 +1,15 @@
-import { useSideBarStore } from "@/store/side-bar-store";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
+import { LucideMenu } from "lucide-react";
+import MobileNavBar from "./mobile-nav-bar";
 
 export default function NavBar() {
-  const store = useSideBarStore();
   return (
     <nav className="site-nav dark mb-5 px-5 sm:px-20 ">
       <div className="container">
@@ -58,13 +66,27 @@ export default function NavBar() {
             </li>
           </ul>
 
-          <a
+          {/* <a
             href="#"
             className="burger ml-auto sm:hidden"
             onClick={() => store.setOpenSideBar(true)}
           >
             <span></span>
-          </a>
+          </a> */}
+
+          <Sheet>
+            <SheetTrigger>
+              <LucideMenu size={40} className="sm:hidden" />
+            </SheetTrigger>
+            <SheetContent>
+              <SheetHeader>
+                <SheetTitle></SheetTitle>
+                <SheetDescription>
+                  <MobileNavBar />
+                </SheetDescription>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </nav>

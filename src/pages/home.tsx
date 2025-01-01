@@ -5,13 +5,12 @@ import Footer from "@/components/footer";
 import NavBar from "@/components/nav-bar";
 import { Link } from "react-router";
 import { AppCarousel } from "@/components/app-carousel";
-import MobileNavBar from "@/components/mobile-nav-bar";
 
 export default function Home() {
   return (
     <>
       {/* Section: mobile-nav */}
-      <MobileNavBar />
+      {/* <MobileNavBar /> */}
 
       {/* Section:nav-bar */}
       <NavBar />

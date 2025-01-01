@@ -1,10 +1,7 @@
-import React from "react";
+import { useSideBarStore } from "@/store/side-bar-store";
 
-export default function NavBar({
-  setOpenSideBar,
-}: {
-  setOpenSideBar: React.Dispatch<React.SetStateAction<boolean | undefined>>;
-}) {
+export default function NavBar() {
+  const store = useSideBarStore();
   return (
     <nav className="site-nav dark mb-5 px-5 sm:px-20 ">
       <div className="container">
@@ -64,7 +61,7 @@ export default function NavBar({
           <a
             href="#"
             className="burger ml-auto sm:hidden"
-            onClick={() => setOpenSideBar(true)}
+            onClick={() => store.setOpenSideBar(true)}
           >
             <span></span>
           </a>

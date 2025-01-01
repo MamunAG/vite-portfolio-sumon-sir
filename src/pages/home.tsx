@@ -1,25 +1,20 @@
-import { ArrowRight, CarFront, ChartArea, X } from "lucide-react";
+import { ArrowRight, CarFront, ChartArea } from "lucide-react";
 import "./home.css";
 import CallUsNow from "@/components/call-us-now";
 import Footer from "@/components/footer";
 import NavBar from "@/components/nav-bar";
-import React from "react";
 import { Link } from "react-router";
 import { AppCarousel } from "@/components/app-carousel";
 import MobileNavBar from "@/components/mobile-nav-bar";
 
 export default function Home() {
-  const [isOpenSidebar, setOpenSideBar] = React.useState<boolean>();
   return (
     <>
       {/* Section: mobile-nav */}
-      <MobileNavBar
-        isOpenSidebar={isOpenSidebar}
-        setOpenSideBar={setOpenSideBar}
-      />
+      <MobileNavBar />
 
       {/* Section:nav-bar */}
-      <NavBar setOpenSideBar={setOpenSideBar} />
+      <NavBar />
 
       {/* section:hero */}
       <div

@@ -1,9 +1,9 @@
 import HeroSectionOtherPage from "@/components/hero-section-other-page";
 
-export default function About() {
+export default function ContactUs() {
   return (
     <>
-      <HeroSectionOtherPage normalText="About" strongText="Company" />
+      <HeroSectionOtherPage normalText="Contact" strongText="Us" />
     </>
   );
 }

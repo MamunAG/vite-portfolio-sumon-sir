@@ -26,10 +26,14 @@ export default function CallUsNow() {
           </h1>
           <p className="mb-0">
             <Link
-              to="#"
+              // to="/contact-us"
               className="btn btn-primary text-white hover:text-white"
+              // onClick={() => {
+              //   window.location.href = "/contact-us";
+              // }}
+              to="tel:555-555-5555"
             >
-              Call Us Now
+              Call Us Now. 555-555-5555
             </Link>
           </p>
         </div>

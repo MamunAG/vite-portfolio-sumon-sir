@@ -4,7 +4,7 @@ export default function Achievement() {
       className="untree_co-section pt-0 count-numbers flex justify-center p-7"
       style={{ backgroundColor: "#37373F" }}
     >
-      <div className="container">
+      <div className="container mb-5">
         <div className="flex items-center flex-wrap ">
           <div className="lg:w-4/12 " data-aos="fade-up">
             <h2 className="heading text-white text-left md:pl-10">

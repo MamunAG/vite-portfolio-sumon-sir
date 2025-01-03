@@ -2,6 +2,7 @@ import { Link } from "react-router";
 
 export default function CallUsNow() {
   const cellNumber = "555-555-5555";
+  const whatsappNumber = "555-555-5555";
   return (
     <div
       className="px-5 relative flex justify-center items-center"
@@ -25,18 +26,20 @@ export default function CallUsNow() {
               Let's get started. Call us Now for a Free Consultation
             </span>
           </h1>
-          <p className="mb-0">
+          <div className="mb-0 flex flex-col justify-center items-center gap-1">
             <Link
-              // to="/contact-us"
-              className="btn btn-primary text-white hover:text-white"
-              // onClick={() => {
-              //   window.location.href = "/contact-us";
-              // }}
+              className="btn btn-primary text-white hover:text-white  w-10/12 md:w-4/12"
               to={`tel:${cellNumber}`}
             >
               Call Us Now: {cellNumber}
             </Link>
-          </p>
+            <Link
+              className="btn btn-primary text-white hover:text-white w-10/12 md:w-4/12"
+              to={`https://wa.me/${whatsappNumber}`}
+            >
+              Whatsapp Us Now: {whatsappNumber}
+            </Link>
+          </div>
         </div>
       </div>
     </div>

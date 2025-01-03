@@ -5,13 +5,6 @@ export default function MobileNavBar() {
   const store = useSideBarStore();
 
   const location = useLocation();
-  let logoTextColor = "";
-  let menuTextColor = "";
-
-  if (location.pathname !== "/") {
-    menuTextColor = "rgba(255, 255, 255, 0.5)";
-    logoTextColor = "white";
-  }
 
   return (
     <div

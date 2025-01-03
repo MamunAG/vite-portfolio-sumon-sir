@@ -14,8 +14,8 @@ export default function BlogCard({ blog }: { blog: BlogWithFirstDetailsDto }) {
       data-aos="fade-up"
       data-aos-delay="100"
     >
-      <div className="w-full h-full flex flex-col sm:flex-row justify-center items-center">
-        <div className="flex-1 pl-5">
+      <div className="w-full h-full flex flex-row sm:flex-col justify-center items-start sm:items-center">
+        <div className="flex-1 pl-3">
           <CardTitle className="mb-3 leading-6 text-primary text-2xl">
             {blog?.title}
           </CardTitle>

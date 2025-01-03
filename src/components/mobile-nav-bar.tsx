@@ -1,13 +1,18 @@
 import { useSideBarStore } from "@/store/side-bar-store";
-import { Link } from "react-router";
-import React from "react";
+import { Link, useLocation } from "react-router";
 
 export default function MobileNavBar() {
   const store = useSideBarStore();
-  const inputRef = React.useRef<HTMLButtonElement>(null);
-  React.useEffect(() => {
-    inputRef.current?.click();
-  }, [store.isOpenSidebar]);
+
+  const location = useLocation();
+  let logoTextColor = "";
+  let menuTextColor = "";
+
+  if (location.pathname !== "/") {
+    menuTextColor = "rgba(255, 255, 255, 0.5)";
+    logoTextColor = "white";
+  }
+
   return (
     <div
       className=""
@@ -15,20 +20,65 @@ export default function MobileNavBar() {
     >
       <div className="site-mobile-menu-body" style={{ overflow: "hidden" }}>
         <ul className="site-nav-wrap">
-          <li className="px-10 py-2  w-full hover:text-primary">
-            <Link to="/">Home</Link>
+          <li
+            className={`px-10 py-2  w-full ${
+              location.pathname === "/" ? "text-primary" : "text-gray-800"
+            }`}
+          >
+            <Link to="/" onClick={() => store.setOpenSideBar(false)}>
+              Home
+            </Link>
           </li>
-          <li className="px-10 py-2  w-full text-gray-800 hover:text-primary">
-            <Link to="/services">Services</Link>
+          <li
+            className={`px-10 py-2  w-full ${
+              location.pathname === "/services"
+                ? "text-primary"
+                : "text-gray-800"
+            }`}
+          >
+            <Link to="/services" onClick={() => store.setOpenSideBar(false)}>
+              Services
+            </Link>
           </li>
-          <li className="px-10 py-2  w-full text-gray-800 hover:text-primary">
-            <Link to="/attorneys">Attorneys</Link>
+          <li
+            className={`px-10 py-2  w-full ${
+              location.pathname === "/attorneys"
+                ? "text-primary"
+                : "text-gray-800"
+            }`}
+          >
+            <Link to="/attorneys" onClick={() => store.setOpenSideBar(false)}>
+              Attorneys
+            </Link>
           </li>
-          <li className="px-10 py-2  w-full text-gray-800 hover:text-primary">
-            <Link to="/about">About</Link>
+          <li
+            className={`px-10 py-2  w-full ${
+              location.pathname === "/about" ? "text-primary" : "text-gray-800"
+            }`}
+          >
+            <Link to="/about" onClick={() => store.setOpenSideBar(false)}>
+              About
+            </Link>
           </li>
-          <li className="px-10 py-2  w-full text-gray-800 hover:text-primary">
-            <Link to="/contact-us">Contact Us</Link>
+          <li
+            className={`px-10 py-2  w-full ${
+              location.pathname === "/contact-us"
+                ? "text-primary"
+                : "text-gray-800"
+            }`}
+          >
+            <Link to="/contact-us" onClick={() => store.setOpenSideBar(false)}>
+              Contact Us
+            </Link>
+          </li>
+          <li
+            className={`px-10 py-2  w-full ${
+              location.pathname === "/blogs" ? "text-primary" : "text-gray-800"
+            }`}
+          >
+            <Link to="/blogs" onClick={() => store.setOpenSideBar(false)}>
+              Blogs
+            </Link>
           </li>
         </ul>
       </div>

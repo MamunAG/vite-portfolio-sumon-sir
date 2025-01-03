@@ -1,11 +1,4 @@
-import {
-  Dribbble,
-  Facebook,
-  Instagram,
-  Linkedin,
-  PiIcon,
-  Twitter,
-} from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import "./footer.css";
 
 export default function Footer() {
@@ -153,7 +146,7 @@ export default function Footer() {
                     <Linkedin size={16} />
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="#"
                     style={{
@@ -164,8 +157,8 @@ export default function Footer() {
                   >
                     <PiIcon size={16} />
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a
                     href="#"
                     style={{
@@ -176,7 +169,7 @@ export default function Footer() {
                   >
                     <Dribbble size={16} />
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

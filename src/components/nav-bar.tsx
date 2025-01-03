@@ -9,9 +9,11 @@ import {
 import { LucideMenu } from "lucide-react";
 import MobileNavBar from "./mobile-nav-bar";
 import { Link, useLocation } from "react-router";
+import { useSideBarStore } from "@/store/side-bar-store";
 // const routes = ["services", "about", "contact-us", "attorneys", "blogs"];
 
 export default function NavBar() {
+  const store = useSideBarStore();
   const location = useLocation();
   let logoTextColor = "";
   let menuTextColor = "";
@@ -120,9 +122,13 @@ export default function NavBar() {
             </li>
           </ul>
         </div>
-        <Sheet>
+        <Sheet open={store.isOpenSidebar} onOpenChange={store.setOpenSideBar}>
           <SheetTrigger>
-            <LucideMenu size={40} className="sm:hidden" />
+            <LucideMenu
+              size={40}
+              className="sm:hidden"
+              style={{ color: logoTextColor }}
+            />
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>

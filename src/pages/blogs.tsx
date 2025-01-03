@@ -16,7 +16,10 @@ export default function Blogs() {
           className="untree_co-section bg-primary-dark pt-3 pb-10 flex justify-center items-center"
           style={{ backgroundColor: "#37373F" }}
         >
-          <div className="container mx-auto flex flex-col-reverse lg:flex-col lg:mt-5 lg:px-20 text-white">
+          <div
+            className="container mx-auto flex flex-col-reverse
+            p-3 lg:flex-col lg:mt-5 lg:px-20 text-white"
+          >
             {blogs?.map((b: BlogWithFirstDetailsDto) => (
               <BlogCard blog={b} key={Math.random()} />
             ))}
@@ -27,7 +30,7 @@ export default function Blogs() {
           className="untree_co-section bg-primary-dark pt-3 pb-10 flex justify-center items-center"
           style={{ backgroundColor: "#37373F" }}
         >
-          <div className="container mx-auto flex flex-col-reverse lg:flex-col lg:mt-5 lg:px-20 text-white">
+          <div className="container p-3  mx-auto flex flex-col-reverse lg:flex-col lg:mt-5 lg:px-20 text-white">
             <Skeleton className="border rounded-lg shadow w-full p-5 mb-5 h-28 transition" />
             <Skeleton className="border rounded-lg shadow w-full p-5 mb-5 h-28  transition" />
             <Skeleton className="border rounded-lg shadow w-full p-5 mb-5 h-28  transition" />

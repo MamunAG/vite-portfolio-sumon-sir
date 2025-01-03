@@ -28,13 +28,13 @@ export default function CallUsNow() {
           </h1>
           <div className="mb-0 flex flex-col justify-center items-center gap-1">
             <Link
-              className="btn btn-primary text-white hover:text-white  w-10/12 md:w-4/12"
+              className="btn btn-primary text-white hover:text-white w-10/12 md:w-5/12 lg:w-6/12"
               to={`tel:${cellNumber}`}
             >
               Call Us: {cellNumber}
             </Link>
             <Link
-              className="btn btn-primary text-white hover:text-white w-10/12 md:w-4/12"
+              className="btn btn-primary text-white hover:text-white w-10/12 md:w-5/12 lg:w-6/12"
               to={`https://wa.me/${whatsappNumber}`}
             >
               Whatsapp Us: {whatsappNumber}

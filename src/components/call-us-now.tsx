@@ -32,7 +32,7 @@ export default function CallUsNow() {
               // onClick={() => {
               //   window.location.href = "/contact-us";
               // }}
-              to="tel:555-555-5555"
+              to={`tel:${cellNumber}`}
             >
               Call Us Now: {cellNumber}
             </Link>

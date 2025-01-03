@@ -6,19 +6,28 @@ import Layout from "./pages/layout";
 import Services from "./pages/services";
 import Attorneys from "./pages/attorney";
 import ContactUs from "./pages/contact-us";
+import Blogs from "./pages/blogs";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import WrappedBlogDetails from "./pages/blog-details";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/attorneys" element={<Attorneys />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-        </Route>
-      </Routes>
+      <QueryClientProvider client={queryClient}>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/attorneys" element={<Attorneys />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogs/details/:id" element={<WrappedBlogDetails />} />
+          </Route>
+        </Routes>
+      </QueryClientProvider>
     </BrowserRouter>
   );
 }

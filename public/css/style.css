@@ -1481,3 +1481,7 @@ h4,
   min-width: 100%;
   margin-bottom: 1rem;
 }
+
+.text-color-grey {
+  color: rgba(255, 255, 255, 0.5);
+}

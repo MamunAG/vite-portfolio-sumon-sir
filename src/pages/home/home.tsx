@@ -4,8 +4,11 @@ import PracticeArea from "@/components/practice-area";
 import Achievement from "@/components/achivement";
 import HappyClient from "@/components/happy-client";
 import Expertise from "@/components/expertise";
+import { GetAllBlogWithFirstDetails } from "@/actions/blog-actions";
 
 export default function Home() {
+  GetAllBlogWithFirstDetails();
+
   return (
     <>
       {/* Section: mobile-nav */}

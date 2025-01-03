@@ -9,13 +9,20 @@ import {
 import { LucideMenu } from "lucide-react";
 import MobileNavBar from "./mobile-nav-bar";
 import { Link, useLocation } from "react-router";
-const routes = ["/services", "/about", "/contact-us", "/attorneys"];
+// const routes = ["services", "about", "contact-us", "attorneys", "blogs"];
 
 export default function NavBar() {
   const location = useLocation();
-  const textColor = routes.includes(location.pathname)
-    ? "rgba(255, 255, 255, 0.5)"
-    : "";
+  let logoTextColor = "";
+  let menuTextColor = "";
+
+  if (location.pathname !== "/") {
+    menuTextColor = "rgba(255, 255, 255, 0.5)";
+    logoTextColor = "white";
+  }
+
+  // textColor = currentRoute ? "" : "rgba(255, 255, 255, 0.5)";
+
   return (
     <>
       <nav className="site-nav dark mb-5 px-5 sm:px-20 flex justify-between">
@@ -31,7 +38,7 @@ export default function NavBar() {
             to="/"
             className="logo m-0 text-white"
             style={{
-              color: `${routes.includes(location.pathname) ? "white" : ""}`,
+              color: `${logoTextColor}`,
             }}
           >
             Justice<span className="text-primary">.</span>
@@ -42,7 +49,7 @@ export default function NavBar() {
               <Link
                 to="/"
                 className="hover:text-white"
-                style={{ color: `${textColor}` }}
+                style={{ color: `${menuTextColor}` }}
               >
                 Home
               </Link>
@@ -52,7 +59,7 @@ export default function NavBar() {
                 to="/services"
                 style={{
                   color: `${
-                    location.pathname === "/services" ? "white" : textColor
+                    location.pathname === "/services" ? "white" : menuTextColor
                   }`,
                 }}
               >
@@ -64,7 +71,7 @@ export default function NavBar() {
                 to="/attorneys"
                 style={{
                   color: `${
-                    location.pathname === "/attorneys" ? "white" : textColor
+                    location.pathname === "/attorneys" ? "white" : menuTextColor
                   }`,
                 }}
               >
@@ -76,7 +83,7 @@ export default function NavBar() {
                 to="/about"
                 style={{
                   color: `${
-                    location.pathname === "/about" ? "white" : textColor
+                    location.pathname === "/about" ? "white" : menuTextColor
                   }`,
                 }}
               >
@@ -88,11 +95,27 @@ export default function NavBar() {
                 to="/contact-us"
                 style={{
                   color: `${
-                    location.pathname === "/contact-us" ? "white" : textColor
+                    location.pathname === "/contact-us"
+                      ? "white"
+                      : menuTextColor
                   }`,
                 }}
               >
                 Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blogs"
+                style={{
+                  color: `${
+                    location.pathname.includes("/blogs")
+                      ? "white"
+                      : menuTextColor
+                  }`,
+                }}
+              >
+                Blogs
               </Link>
             </li>
           </ul>

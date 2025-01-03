@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 
 export default function CallUsNow() {
+  const cellNumber = "555-555-5555";
   return (
     <div
       className="px-5 relative flex justify-center items-center"
@@ -33,7 +34,7 @@ export default function CallUsNow() {
               // }}
               to="tel:555-555-5555"
             >
-              Call Us Now. 555-555-5555
+              Call Us Now: {cellNumber}
             </Link>
           </p>
         </div>

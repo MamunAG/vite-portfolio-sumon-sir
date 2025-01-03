@@ -31,13 +31,13 @@ export default function CallUsNow() {
               className="btn btn-primary text-white hover:text-white  w-10/12 md:w-4/12"
               to={`tel:${cellNumber}`}
             >
-              Call Us Now: {cellNumber}
+              Call Us: {cellNumber}
             </Link>
             <Link
               className="btn btn-primary text-white hover:text-white w-10/12 md:w-4/12"
               to={`https://wa.me/${whatsappNumber}`}
             >
-              Whatsapp Us Now: {whatsappNumber}
+              Whatsapp Us: {whatsappNumber}
             </Link>
           </div>
         </div>

@@ -8,7 +8,7 @@ export default function ContactUs() {
         className="untree_co-section flex justify-center"
         style={{ backgroundColor: "#37373F" }}
       >
-        <div className="container">
+        <div className="container px-5 sm:px-0">
           <div className="flex justify-center">
             <div className="w-full flex justify-center">
               <form className="w-full" data-aos="fade-up" data-aos-delay="200">

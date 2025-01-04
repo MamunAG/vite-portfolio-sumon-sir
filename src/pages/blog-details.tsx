@@ -68,7 +68,7 @@ function GetBlogDetails() {
           className="untree_co-section bg-primary-dark pt-5 pb-20 flex justify-center items-center"
           style={{ backgroundColor: "#37373F" }}
         >
-          <div className="container flex flex-col justify-center text-white">
+          <div className="container flex flex-col justify-center text-white px-5 sm:px-0">
             {/* <div className="border-b-2 mb-3 pb-2">
               <h1 className="font-bold text-2xl">{blog?.title}</h1>
             </div> */}

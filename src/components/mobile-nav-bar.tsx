@@ -66,7 +66,9 @@ export default function MobileNavBar() {
           </li>
           <li
             className={`px-10 py-2  w-full ${
-              location.pathname === "/blogs" ? "text-primary" : "text-gray-800"
+              location.pathname.includes("blogs")
+                ? "text-primary"
+                : "text-gray-800"
             }`}
           >
             <Link to="/blogs" onClick={() => store.setOpenSideBar(false)}>

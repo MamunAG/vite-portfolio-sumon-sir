@@ -14,9 +14,9 @@ export default function BlogCard({ blog }: { blog: BlogWithFirstDetailsDto }) {
       data-aos="fade-up"
       data-aos-delay="100"
     >
-      <div className="w-full h-full flex flex-row sm:flex-col justify-center items-start sm:items-center">
+      <div className="w-full h-full flex flex-row justify-center items-start sm:items-center">
         <div className="flex-1 pl-3">
-          <CardTitle className="mb-3 leading-6 text-primary text-2xl">
+          <CardTitle className="mb-3 leading-6 text-primary sm:text-2xl">
             {blog?.title}
           </CardTitle>
           <div
@@ -25,12 +25,12 @@ export default function BlogCard({ blog }: { blog: BlogWithFirstDetailsDto }) {
           />
           <p className="mt-3 underline">বিস্তারিত ...</p>
         </div>
-        <div className="mb-3 pl-6">
+        <div className="w-4/12 sm:w-3/12 mb-3 pl-2 sm:pl-6 flex justify-center items-center">
           <img
             src={`https://files.kkklawhouse.com/blog_images/${blog?.firstImageUrl}`}
             alt={"image"}
-            width={110}
-            height={110}
+            width={210}
+            height={210}
             className="border rounded-lg p-1"
           />
         </div>

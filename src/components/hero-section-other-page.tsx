@@ -14,12 +14,12 @@ export default function HeroSectionOtherPage({
     <div className="untree_co-section bg-primary-dark py-20 flex justify-center items-center">
       <div className="container">
         {isLoading ? (
-          <div className="w-full h-full pt-16">
+          <div className="w-full h-full pt-16 px-3 sm:px-0">
             <Skeleton className="h-10 bg-zinc-700" style={{ width: "100%" }} />
           </div>
         ) : (
-          <div className="flex justify-center items-center">
-            <div className="lg:w-7/12 pt-5 mt-5 flex justify-center items-center">
+          <div className="flex justify-center items-center px-3 sm:px-0">
+            <div className="w-full pt-5 mt-5 flex justify-center items-center">
               <h1
                 className="text-white heading"
                 data-aos="fade-up"

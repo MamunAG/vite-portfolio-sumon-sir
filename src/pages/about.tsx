@@ -10,7 +10,7 @@ export default function About() {
         className="untree_co-section pb-10 flex flex-col justify-center items-center"
         style={{ backgroundColor: "#37373F" }}
       >
-        <div className="container min-h-64">
+        <div className="container min-h-64 px-5 sm:px-0">
           <div
             className="block sm:flex sm:gap-10 m-0 sm:mt-20"
             style={{ margin: 0 }}

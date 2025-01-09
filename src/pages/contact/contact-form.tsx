@@ -59,7 +59,6 @@ export default function ContactForm() {
       description: "Message has been sent successfully.",
     });
 
-    // redirect("/");
     window.location.href = "/";
 
     console.log(data);

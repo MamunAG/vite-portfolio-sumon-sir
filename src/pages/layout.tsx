@@ -1,6 +1,7 @@
 import CallUsNow from "@/components/call-us-now";
 import Footer from "@/components/footer";
 import NavBar from "@/components/nav-bar";
+import { Toaster } from "@/components/ui/toaster";
 import { Outlet } from "react-router";
 
 export default function Layout() {
@@ -29,6 +30,7 @@ export default function Layout() {
           <span className="sr-only">Loading...</span>
         </div>
       </div>
+      <Toaster />
     </>
   );
 }

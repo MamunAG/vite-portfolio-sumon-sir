@@ -3,6 +3,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { useState } from "react";
 import { Save } from "@/actions/contact-message-actions";
 import { ContactMessage } from "@/type/app-type";
+// import { redirect } from "react-router";
 
 type contactDataType = {
   name: string;
@@ -54,9 +55,12 @@ export default function ContactForm() {
     await Save(msg);
 
     toast({
-      variant: "success",
+      variant: "default",
       description: "Message has been sent successfully.",
     });
+
+    // redirect("/");
+    window.location.href = "/";
 
     console.log(data);
   }

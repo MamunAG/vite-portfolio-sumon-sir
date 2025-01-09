@@ -5,7 +5,7 @@ import About from "./pages/about";
 import Layout from "./pages/layout";
 import Services from "./pages/services";
 import Attorneys from "./pages/attorney";
-import ContactUs from "./pages/contact-us";
+import ContactUs from "./pages/contact/contact-us";
 import Blogs from "./pages/blogs";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import WrappedBlogDetails from "./pages/blog-details";

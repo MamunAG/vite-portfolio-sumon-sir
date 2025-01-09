@@ -121,6 +121,7 @@ export interface ContactMessage {
   id: number;
   name: string;
   email: string;
+  phoneNumber: string;
   subject: string;
   message: string;
   createdDate: Date;

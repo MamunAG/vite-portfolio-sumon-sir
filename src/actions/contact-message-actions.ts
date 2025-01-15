@@ -23,10 +23,10 @@ export async function Save(
     throw new Error("Name is required");
   }
   if (name.length < 3) {
-    throw new Error("Tag name must be at least 3 character.");
+    throw new Error("Name must be at least 3 character.");
   }
   if (!email) {
-    throw new Error("Contact number is required");
+    throw new Error("Email is required");
   }
   if (email.length < 10) {
     throw new Error("Please provide a valid contact number.");

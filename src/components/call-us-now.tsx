@@ -1,8 +1,8 @@
 import { Link } from "react-router";
 
 export default function CallUsNow() {
-  const cellNumber = "555-555-5555";
-  const whatsappNumber = "555-555-5555";
+  const cellNumber = "+880 1921-876606";
+  const whatsappNumber = "+880 192-1876606";
   return (
     <div
       className="px-5 relative flex justify-center items-center"
@@ -28,13 +28,13 @@ export default function CallUsNow() {
           </h1>
           <div className="mb-0 flex flex-col justify-center items-center gap-1">
             <Link
-              className="btn btn-primary text-white hover:text-white w-10/12 md:w-5/12 lg:w-6/12"
+              className="btn btn-primary text-white hover:text-white w-10/12 md:w-6/12 lg:w-7/12 whitespace-nowrap"
               to={`tel:${cellNumber}`}
             >
               Call Us: {cellNumber}
             </Link>
             <Link
-              className="btn btn-primary text-white hover:text-white w-10/12 md:w-5/12 lg:w-6/12"
+              className="btn btn-primary text-white hover:text-white w-10/12 md:w-6/12 lg:w-7/12 whitespace-nowrap"
               to={`https://wa.me/${whatsappNumber}`}
             >
               Whatsapp Us: {whatsappNumber}
